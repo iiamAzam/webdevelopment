@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: black;
+}
+
+
+.container{
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 500px;
+    background-color: aqua;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    margin: 10px;
+}
+button{
+    margin: 10px;
+}
+label{
+    margin: 10px;
+
+}
