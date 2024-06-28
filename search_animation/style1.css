@@ -1,0 +1,43 @@
+
+.container{
+        width: 500px;
+        background-color: rgb(216, 190, 190);
+        height: 80vh;
+        margin: 50px auto ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.box {
+        width: 30px;
+        height: 30px;
+        border-radius: 10px;
+        background-color: white;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        cursor: pointer;
+        transition: 0.7s all ease ;
+}
+.box #inp{
+    border: none;
+    outline: none;
+    width:0px;
+    opacity: 0;
+    transition: 0.7s all ease ;
+    
+}
+ .active{
+        width: 200px;
+        justify-content: end;
+       
+}
+.active #inp{
+        display: block;
+        width: 150px;
+        opacity: 1;
+}
+.pad{
+    padding: 5px;
+}
+
