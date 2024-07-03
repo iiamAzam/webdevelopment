@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+        /* background-image: url("ps4-overview-banner-hero-desktop-01-ps4-29jul20$en.webp"); */
+}
+.container{
+    display: flex;
+
+}
+.img1{
+    position: relative;
+    transition: 0.8s all ease-in;
+}
+.img2{
+    position: relative;
+    /* transition: 0.8s all ease-in; */
+}
+
+.img2 img{
+    max-width: 900px;
+    height: 700px;
+    /* transition: 0.8s all ease-in-out; */
+  
+}
+.overlay{
+    position: absolute;
+    left: 100px;
+    top: 260px;
+}
+.overlay h1{
+    color: white;
+}
+.overlay button{
+        margin-left: 50px;
+        width: 150px;
+        height: 40px;
+}
+
+.overlay1{
+    position: absolute;
+    left: 200px;
+    top: 260px;
+}
+.overlay1 h1{
+    color: white;
+}
+.overlay1 button:hover{
+    background-color: green;
+    color: white;
+}
+
+.overlay button:hover{
+    background-color: green;
+    color: white;
+}
+
+.overlay1 button{
+        margin-left: 50px;
+        width: 150px;
+        height: 40px;
+}
+/* ....................................... */
+
+.add1 .img2 img{
+        object-fit: cover;
+        width: 1000px;
+        height: 700px;
+        /* transition: 0.8s all ease-in; */
+}
+.add1 .img2 .overlay1{
+    left: 300px;
+}
+.add1 .img1 img{
+    width: 220px;
+    height: 700px;
+    object-fit: cover;
+    transition: 0.8s width ease-in-out;
+}
+.add1 .img1 .overlay{
+    display: none;
+}
+
+
+/* ------------------------------------------- */
+.add .img1 img{
+    object-fit: cover;
+    width: 1000px;
+    height: 700px;
+    transition: 0.8s all ease-in;
+
+}
+.add .img1 .overlay1{
+    left: 300PX;
+}
+
+.add .img1 img{
+object-fit: cover;
+width: 900px;
+height: 700px;
+transition: 0.8s width ease-in-out;
+}
+.add .img1 .overlay{
+left: 300PX;
+}
+.add .img2 img{
+    width: 220px;
+    object-fit: cover;
+    transition: 0.8s width ease-in-out;
+
+}
+.add .img2 .overlay1{
+    display: none;
+}
