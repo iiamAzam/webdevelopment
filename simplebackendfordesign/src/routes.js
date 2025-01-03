@@ -1,36 +1,27 @@
 const express = require('express')
-const  MehandiDatabase  = require('./database')
-const sendmail = require ('./utils')
-const route= express.Router()
+const sendmail = require('./utils')
+const route = express.Router()
 
-
-route.post('/api/mehandi',async(req , res )=>{
-   try{
-        console.log(req.body)
-    const {name,contact,area} = req.body
-   
-    // const newdata  = new MehandiDatabase({
-    //         name ,
-    //         contact,
-    //         area
-    // })
-    // const dataid = await newdata.save()
+route.post('/mehandi', async (req, res) => {
+  try {
+    console.log(req.body)
+    const { name, email, message } = req.body
     const to = 'azaanpq@gmail.com'
-    const subject = `regarding the mehandi service`
-    const content =  `name:${name}\n contect:${contact}\n area:${area}`
-    sendmail(to,subject,content)
+    const subject = 'Regarding the Mehandi service'
+    const content = `Name: ${name}\nemail: ${email}\nmessage: ${message}`
+
+    sendmail(to, subject, content)
     return res.status(200).json({
-            message:'successfully submitted',
-            status: true
+      message: 'Successfully submitted',
+      status: true,
     })
-}catch(erroor){
-        return res.status(400).json ({
-            message : 'not submitted',
-            status : false 
-        }
-        )
-}
+  } catch (error) {
+    console.error('Error:', error)
+    return res.status(400).json({
+      message: 'Not submitted',
+      status: false,
+    })
+  }
 })
 
-module.exports=route
-
+module.exports = route
