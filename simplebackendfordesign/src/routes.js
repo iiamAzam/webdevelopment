@@ -6,7 +6,7 @@ route.post('/mehandi', async (req, res) => {
   try {
     console.log(req.body)
     const { name, email, message } = req.body
-    const to = 'azaanpq@gmail.com'
+    const to = 'afreenaims2023@gmail.com'
     const subject = 'Regarding the Mehandi service'
     const content = `Name: ${name}\nemail: ${email}\nmessage: ${message}`
 
